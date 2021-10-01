@@ -4,6 +4,7 @@ import "fmt"
 
 /* bool 型で、3つのを変数を宣言
  * var 変数名 型名 の順番
+ * ここでも、型の名称が最後に入ることに注意
  * ちなみにboolのデフォルト値はfalse
  */
 var c, python, java bool
