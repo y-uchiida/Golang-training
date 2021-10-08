@@ -16,5 +16,14 @@ func main() {
 		defer fmt.Println(i)
 	}
 
+	word := "hello go world!"
+	defer fmt.Println(word)
+
+	/* 遅延展開する というのは、その名の通り「実際に展開(処理)」するのを遅延させるというだけで、
+	 * 値自体はdeferの命令を読み込んだ時点で確定している
+	 * そのため、変数の値をdefer命令の後に書き換えても、出力の内容に変化はない
+	 */
+	word = "hellllllooooooooo"
+
 	fmt.Println("main end")
 }
